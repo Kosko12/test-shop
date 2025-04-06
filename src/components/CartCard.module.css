@@ -1,0 +1,105 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding: 10px;
+}
+
+.productList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 8px;
+    width: 65%;
+}
+
+.product {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+    padding: 12px;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 35%;
+}
+
+.productName {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.productPrice {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(18, 185, 15);
+}
+
+.productActions {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 65%;
+}
+
+.quantity {
+    background-color: white;
+    min-width: 60px;
+    border: 1px rgb(85, 83, 83) solid;
+    border-radius: 4px;
+    text-align: end;
+}
+
+.changeQuantityBtn {
+    padding: 10px 16px;
+    cursor: pointer;
+    border: 1px rgb(37, 37, 37) solid;
+    border-radius: 6px;
+    background-color: rgb(109, 175, 209);
+}
+
+.removeProductBtn {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.cartActions {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    width: 35%;
+}
+
+.summary {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.purgeCartBtn {
+    padding: 10px 16px;
+    cursor: pointer;
+    border: 1px rgb(37, 37, 37) solid;
+    border-radius: 6px;
+    background-color: white;
+    color: rgb(202, 6, 6);
+}
+
+.purchaseBtn {
+    background-color: rgb(18, 185, 15);
+    cursor: pointer;
+    padding: 10px 16px;
+    border: 1px rgb(37, 37, 37) solid;
+    border-radius: 6px;
+    color: white;
+}

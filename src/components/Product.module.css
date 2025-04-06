@@ -1,0 +1,62 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(210, 234, 234);
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 2.5%;
+    border: rgba(191, 177, 177, 0.771) 1px solid;min-width: 450px;
+}
+
+.infoWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.purchaseWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 0.2rem;
+
+}
+
+.name {
+    color: rgb(59, 57, 57);
+    font-size: 20px;
+    text-align: start;
+}
+.price{
+    color: rgb(18, 185, 15);
+    font-size: 25px;
+    text-align: start;
+}
+
+.image {
+   min-width: 150px;
+   min-height: 150px;
+}
+
+.quantity {
+    background-color: white;
+    width: 50px;
+    border-radius: 5%;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+.addToCart {
+    background-color: rgb(16, 214, 16);
+    border-radius: 5%;
+    padding: 5px 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    z-index: 1;
+}
+
+.addToCartIcon {
+    width: 22px;
+    height: 22px;
+}

@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 20px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.paginationInput {
+    border: 1px rgb(121, 115, 115) solid;
+    border-radius: 4px;
+    text-align: center;
+}
