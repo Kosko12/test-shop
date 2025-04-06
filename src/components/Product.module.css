@@ -56,6 +56,11 @@
     z-index: 1;
 }
 
+.addToCart:disabled {
+    background-color: rgb(121, 117, 117);
+    cursor: not-allowed;
+}
+
 .addToCartIcon {
     width: 22px;
     height: 22px;

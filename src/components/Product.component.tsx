@@ -44,7 +44,7 @@ const Product: React.FC<ProductProp> = props => {
                 <div className={style.price}>{props.productInstance.price.toFixed(2)} zł</div>
                 <div className={style.purchaseWrapper}>
                     {/* <input className={style.quantity} name="quantity" type="number" max={props.productInstance.quantity} defaultValue={1}/> */}
-                    <button className={style.addToCart} onClick={(e) => {
+                    <button className={style.addToCart} disabled={props.productInstance.quantity === 0} onClick={(e) => {
                         e.stopPropagation();
 
                         dispatch(addProductToCart({id: props.id, instance: props.productInstance, quantity: 1}))

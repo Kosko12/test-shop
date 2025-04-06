@@ -39,8 +39,12 @@ const productsSlice = createSlice({
     updateStock(state, action: PayloadAction<{id: number, quantity: number}>){
       const targetElement = state.items.find(el => el.id === action.payload.id);
       if(targetElement) {
-        
-        targetElement.instance.stock = targetElement.instance.stock - action.payload.quantity;
+        if(targetElement.instance.stock - action.payload.quantity === 0){
+          state.items.splice(state.items.findIndex(el => el.id === targetElement.id), 1);
+        }
+        else {
+          targetElement.instance.stock = targetElement.instance.stock - action.payload.quantity;
+        }
       }
     }
   },

@@ -35,7 +35,7 @@ type Props = {
                 onChange={handleChange}
                 value={quantity}
                 defaultValue={1}/>
-                <button className={style.addToCart} onClick={() => {
+                <button disabled={item.productInstance.quantity === 0} className={style.addToCart} onClick={() => {
                   setMaxQuantity(prev => prev - quantity);
                   setQuantity(() => 1);
                   onConfirm(item.id, item.productInstance, quantity)
