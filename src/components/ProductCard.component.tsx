@@ -11,7 +11,7 @@ type Props = {
   
   export const ProductCard: React.FC<Props> = ({ item, onConfirm }) => {
 
-    const [quantity, setQuantity] = useState<number>(1);
+    const [quantity, setQuantity] = useState<number>(0);
     const [maxQuantity, setMaxQuantity] = useState<number>(item.productInstance.quantity);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -31,13 +31,13 @@ type Props = {
                 <input ref={quantityInput} 
                 className={style.quantity} name="quantity" type="number" 
                 max={maxQuantity}
-                min={1}
+                min={0}
                 onChange={handleChange}
                 value={quantity}
                 defaultValue={1}/>
-                <button disabled={item.productInstance.quantity === 0} className={style.addToCart} onClick={() => {
+                <button disabled={maxQuantity === 0} className={style.addToCart} onClick={() => {
                   setMaxQuantity(prev => prev - quantity);
-                  setQuantity(() => 1);
+                  setQuantity(() => 0);
                   onConfirm(item.id, item.productInstance, quantity)
                 }}>Dodaj <img className={style.addToCartIcon} src={addToCartIcon}/>
                 </button>
