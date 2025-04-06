@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import {ProductType} from "../types/Product";
 import style from './Product.module.css';
 import { ProductProp } from "./Product.component";

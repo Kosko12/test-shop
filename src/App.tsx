@@ -9,7 +9,6 @@ function App() {
   const { isOpen, openModal, closeModal } = useModalContext();
   return (
     <div className="App">
-      {/* <button style={{cursor: 'pointer'}}onClick={() => openModal()}>Otwórz modal</button> */}
       <Header/>
       <Listing/>
       <Modal isOpen={isOpen} onClose={closeModal}>
